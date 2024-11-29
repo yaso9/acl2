@@ -500,12 +500,12 @@
          @('linux') in your current working directory and then @('cd') into it.
          We hope our patch continues to work on newer kernels, and welcome
          contributions to fix it if it doesn't, but it was last tested applied
-         to commit @('12214540ad87'). If you wish to use this version, which is
-         what I recommend if you don't wish to deal with merge conflicts, run
-         the following command:</p>
+         to the commit tagged @('v6.12'). If you wish to use this version,
+         which is what I recommend if you don't wish to deal with merge
+         conflicts, run the following command:</p>
 
          <code>
-         git checkout 12214540ad87
+         git checkout v6.12
          </code>
 
          <p>Now, we must apply the patch. The patch file is found in the ACL2
@@ -513,7 +513,7 @@
          Run the following command to apply it:</p>
 
          <code>
-         git apply &lt;path to patch file&gt;
+         git am &lt;path to patch file&gt;
          </code>
 
          <p>Normally, at this point you'd run @('make menuconfig') to configure
